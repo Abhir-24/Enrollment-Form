@@ -1,0 +1,116 @@
+<!-- Made By Abhir Raj Shrivastava -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Student Enrollment Form</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-header">Student Enrollment Form</div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg">
+                <div class="box1">
+                    <form action="/" method="POST" id="enrollment-form">
+                        <table class="table">
+                            <tr>
+                                <td><label>Name</label></td>
+                                <td><input type="text" class="form-control" id="form-name" name="name" placeholder="Enter Name" value="" required/></td>
+                            </tr>
+                            <tr>
+                                <td><label>Email</label></td>
+                                <td><input type="email" class="form-control" id="form-email" name="email" placeholder="Enter Email" value="" required/></td>
+                            </tr>
+                            <tr>
+                                <td><label>Website</label></td>
+                                <td><input type="url" class="form-control" id="form-website" name="website" placeholder="Enter Website" value="" required/></td>
+                            </tr>
+                            <tr>
+                                <td><label>Image Link</label></td>
+                                <td><input type="url" class="form-control" id="form-image" name="image" placeholder="Enter Image Link" value="" required/></td>
+                            </tr>
+                            <tr>
+                                <td><label>Gender</label></td>
+                                <td>
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input type="radio" name="gender" value="Male" required/>
+                                            Male
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input type="radio" name="gender" value="Female" required/>
+                                            Female
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label>Skills</label></td>
+                                <td>
+                                    <div class="form-check form-check-inline">
+                                        <label>
+                                            <input class="form-check-input skills" type="checkbox" name="java" value="Java" />
+                                            Java
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <label>
+                                            <input class="form-check-input skills" type="checkbox" name="HTML" value="HTML" />
+                                            HTML
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <label>
+                                            <input class="form-check-input skills" type="checkbox" name="CSS" value="CSS" />
+                                            CSS
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <button id="enroll-btn" class="btn btn-primary">Enroll Student</button>
+                        <button type="reset" class="btn btn-danger ">Clear</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="division"></div>
+
+            <div class="col-lg">
+                <div class="detail-box">
+                    <div class="detail-header">
+                        <h3>Enrolled Students</h3>
+                    </div>
+
+                    <table class="table table-bordered  data-table" id="student-details">
+                        <thead class="thead category">
+                            <tr class="">
+                                <th scope="col">Description</th>
+                                <th scope="col">Image</th>
+                            </tr>
+                        </thead>
+                        <!-- <tbody class="table-body-data">
+                            
+                            
+
+                        </tbody> -->
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

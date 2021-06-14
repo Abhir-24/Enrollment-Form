@@ -1,0 +1,122 @@
+body{
+    position:relative;
+    min-height:45rem;    
+}
+
+nav {
+    background-color: #01937C;
+    border: 2px solid grey;
+    color: white;
+    text-align: center; 
+}
+
+.nav-header {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.container{
+    display: contents;
+    margin-right: 20px;
+    margin-left: 20px;
+    text-decoration:none;
+    padding: 100px;
+}
+
+.box1 {
+    margin: 50px 40px;
+}
+
+.form-control {
+    max-width: 250px;
+}
+
+.btn {
+    margin: 0px 10px 0px 10px;
+    padding: 10px 20px;
+    border-radius: 7px;
+    
+}
+.btn:hover{
+    transition: all 0.5s ease-out;
+    background-color: #01937C;
+    color: white;
+}
+
+.division {
+    border-left: 2px solid #01937C;
+    position: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.detail-box {
+    padding:10px 40px 40px 40px;
+}
+
+.detail-header{
+    align-items:baseline;
+    margin-bottom:40px;
+    text-align:center;
+}
+
+.category {
+    background-color: #B6C867;
+    color: white;
+}
+#student-details{
+    border: 1px solid black;
+}
+
+@keyframes fadeEffect {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+    
+}
+
+.student-details-dark{
+    animation: fadeEffect 3s;
+    background-color: #DDFFBC;
+}
+
+.student-details-light{
+    animation: fadeEffect 3s;
+    background-color: #F7F3E9;
+}
+
+.student-image-container{
+    object-fit: contain;
+}
+
+.student-info
+{
+    margin: 0;
+    color: black;
+}
+
+.website {
+    margin: 0;
+    color: blue;
+    text-decoration: underline;
+}
+
+.name-bold {
+    font-weight: 600;
+}
+
+.student-img {
+    width: 150px;
+    height: 100px;
+    margin: auto;
+    display: block;
+}
+ 
+@media screen and (max-width: 540px) {
+    .student-img {
+        width: 100px;
+    }
+}
